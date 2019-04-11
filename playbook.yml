@@ -1,0 +1,15 @@
+---
+- hosts: group1
+  become: yes
+  become_user: root
+  tasks:
+    - name: copy ssh_access shell file
+      template: src=/etc/ansible/ssh_access.sh
+                dest=/var/opt/ssh_access.sh
+                owner=root
+                mode="u=rw"
+    - name: Execute ssh_access shell file with arguements
+      command: /var/opt/ssh_access.sh {{ userid }} {{ action }}
+      register: result
+    - name: Print the result of shell file
+      debug: msg="{{ result.stdout }}"
