@@ -14,6 +14,9 @@ Solution1:
 ansible-playbook playbook.yml -e userid=monica -e action=revoke
 
 solution2:
+
 Looking for AWS solution too , following user guide mentioned below and will take sometime 
 AWS= https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html
 
+
+Please correct me if Im wrong somewhere
