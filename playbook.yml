@@ -1,5 +1,5 @@
 ---
-- hosts: group1
+- hosts: webserver
   become: yes
   become_user: root
   tasks:
