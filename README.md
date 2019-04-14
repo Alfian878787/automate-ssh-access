@@ -9,7 +9,7 @@ Solution1:
 
 1. Create the group of servers in /etc/ansible/hosts file for which you want to grant or revoke the access for specific user
 
-2. Execute ansible playbook.yml with arguements
+2. Change the playbook.ym for hosts parameter and mention the desired group of hosts and then execute ansible playbook.yml with arguements
 
 ansible-playbook playbook.yml -e userid=monica -e action=revoke
 
